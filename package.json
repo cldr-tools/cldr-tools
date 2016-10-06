@@ -1,0 +1,40 @@
+{
+  "name": "cldr-tools",
+  "version": "0.1.0",
+  "description": "utility tools for cldr",
+  "main": "index.js",
+  "scripts": {
+    "test": "NODE_PATH=./lib ./node_modules/.bin/istanbul cover ./node_modules/.bin/_mocha"
+  },
+  "devDependencies": {
+    "chai": "^3.5.0",
+    "istanbul": "^0.4.4",
+    "mocha": "^2.5.3",
+    "sinon": "^1.17.4"
+  },
+  "dependencies": {
+    "cldr-core": "^29.0.0",
+    "cldr-localenames-full": "^29.0.0",
+    "lodash": "^4.16.2",
+    "memoizee": "^0.4.1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+ssh://git@github.com/cldr-tools/cldr-tools.git"
+  },
+  "keywords": [
+    "cldr",
+    "tools",
+    "utilities",
+    "convenient",
+    "languages",
+    "i18n",
+    "l10n"
+  ],
+  "author": "zincli <zinc_li@163.com>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/cldr-tools/cldr-tools/issues"
+  },
+  "homepage": "https://github.com/cldr-tools/cldr-tools#readme"
+}
