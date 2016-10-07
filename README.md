@@ -3,13 +3,16 @@
 [![Build Status](https://travis-ci.org/cldr-tools/cldr-tools.svg?branch=master)](https://travis-ci.org/cldr-tools/cldr-tools)
 [![Coverage Status](https://coveralls.io/repos/github/cldr-tools/cldr-tools/badge.svg?branch=master)](https://coveralls.io/github/cldr-tools/cldr-tools?branch=master)
 
+[![NPM](https://nodei.co/npm/cldr-tools.png)](https://npmjs.org/package/cldr-tools)
 
 > Please Note
 
 > This is an experimental project, modules or api may change frequently.
 
 
-This project aim to build utility and convenient tools for [CLDR](http://cldr.unicode.org/)(Common Locale Data Repository).
+This project aim to build utility and convenient tools for [CLDR](http://cldr.unicode.org/)(Common Locale Data Repository,
+which have a lot of all kinds of data in all over 200+ languages).
+
 Hope to help front-end developers to build globalization applications.
 
 
@@ -96,5 +99,10 @@ waiting to be write
 
 ## Contribute
 
-This project is a fresh start, welcome to contribute!
+This project is a fresh start, welcome to contribute! Please follow the [Github Flow](https://guides.github.com/introduction/flow/)
+
+### Requirements
+
+* This is open source project, so unit test is required. Using Mocha, chai, sinon so far.
+* Comments are welcome and expected
 
