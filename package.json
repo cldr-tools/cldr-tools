@@ -4,10 +4,12 @@
   "description": "utility tools for cldr",
   "main": "index.js",
   "scripts": {
+    "test-ci": "NODE_PATH=./lib ./node_modules/.bin/istanbul cover ./node_modules/mocha/bin/_mocha --report lcovonly -- -R spec && cat ./coverage/lcov.info | ./node_modules/coveralls/bin/coveralls.js && rm -rf ./coverage",
     "test": "NODE_PATH=./lib ./node_modules/.bin/istanbul cover ./node_modules/.bin/_mocha"
   },
   "devDependencies": {
     "chai": "^3.5.0",
+    "coveralls": "^2.11.14",
     "istanbul": "^0.4.4",
     "mocha": "^2.5.3",
     "sinon": "^1.17.4"
