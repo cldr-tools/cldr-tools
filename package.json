@@ -5,7 +5,9 @@
   "main": "index.js",
   "scripts": {
     "test-ci": "NODE_PATH=./lib ./node_modules/.bin/istanbul cover ./node_modules/mocha/bin/_mocha --report lcovonly -- -R spec && cat ./coverage/lcov.info | ./node_modules/coveralls/bin/coveralls.js && rm -rf ./coverage",
-    "test": "NODE_PATH=./lib ./node_modules/.bin/istanbul cover ./node_modules/.bin/_mocha"
+    "test": "NODE_PATH=./lib ./node_modules/.bin/istanbul cover ./node_modules/.bin/_mocha",
+    "snyk-protect": "snyk protect",
+    "prepublish": "npm run snyk-protect"
   },
   "devDependencies": {
     "chai": "^3.5.0",
@@ -18,7 +20,8 @@
     "cldr-core": "^29.0.0",
     "cldr-localenames-full": "^29.0.0",
     "lodash": "^4.16.2",
-    "memoizee": "^0.4.1"
+    "memoizee": "^0.4.1",
+    "snyk": "^1.316.2"
   },
   "repository": {
     "type": "git",
@@ -38,5 +41,6 @@
   "bugs": {
     "url": "https://github.com/cldr-tools/cldr-tools/issues"
   },
-  "homepage": "https://github.com/cldr-tools/cldr-tools#readme"
+  "homepage": "https://github.com/cldr-tools/cldr-tools#readme",
+  "snyk": true
 }
